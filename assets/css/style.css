@@ -281,7 +281,7 @@ body.nav-active { overflow: hidden; }
 .title-2,
 .title-3,
 .title-4 {
-  color: var(--white);
+  color: black;
   font-family: var(--fontFamily-forum);
   font-weight: var(--weight-regular);
   line-height: var(--lineHeight-2);
@@ -317,6 +317,7 @@ color: #fdd02e; }
 .body-2 {
   font-size: var(--fontSize-body-2);
   line-height: var(--lineHeight-4);
+  color: #000000;
 }
 
 .body-3 { font-size: var(--fontSize-body-3); }
@@ -391,7 +392,7 @@ color: #fdd02e; }
 
 .section-subtitle {
   position: relative;
-  color: #ffffff;
+  color: #000000;
   font-weight: var(--weight-bold);
   text-transform: uppercase;
   letter-spacing: var(--letterSpacing-2);
