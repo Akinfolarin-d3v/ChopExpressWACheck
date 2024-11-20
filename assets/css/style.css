@@ -408,7 +408,8 @@ color: #fdd02e; }
 
 .btn {
   position: relative;
-  color: #fdd02e;
+  color: #000000;
+  background-color: #fdd02e;
   font-size: var(--fontSize-label-2);
   font-weight: var(--weight-bold);
   text-transform: uppercase;
@@ -429,7 +430,7 @@ color: #fdd02e; }
   width: 200%;
   height: 200%;
   border-radius: var(--radius-circle);
-  background-color: #fdd02e;
+  background-color: #ffffff;
   transition: var(--transition-2);
   z-index: -1;
 }
