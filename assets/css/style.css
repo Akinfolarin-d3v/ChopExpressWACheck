@@ -2375,7 +2375,7 @@ textarea.input-field {
   font-family: 'Cinzel', serif;
   right: 50px;
   bottom: 60px;
-  background-color: #28a745;
+  background-color: #fdd02e;
   color: #000000;
   border: none;
   border-radius: 50px;
@@ -2389,14 +2389,15 @@ textarea.input-field {
 }
 
 .fixed-button:hover {
-  background-color: #218838;
+  background-color: black;
+  color: #fdd02e;
 }
 
 /* Additional styling for the checkout button */
 .checkout {
   width: 100%;
   padding: 10px;
-  background-color: #00ff37;
+  background-color: #fdd02e;
   color: #000000;
   border: none;
   border-radius: 5px;
@@ -2405,5 +2406,6 @@ textarea.input-field {
 }
 
 .checkout:hover {
-  background-color: #00ff1a;
+  background-color: black;
+  color: #fdd02e;
 }
