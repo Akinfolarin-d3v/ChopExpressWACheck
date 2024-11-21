@@ -351,7 +351,7 @@ color: #fdd02e; }
 .contact-label { font-weight: var(--weight-bold); }
 
 .contact-number {
-  color: #fdd02e;
+  color: #E45314;
   max-width: max-content;
   margin-inline: auto;
 }
@@ -414,13 +414,13 @@ color: #fdd02e; }
 .btn {
   position: relative;
   color: #000000;
-  background-color: #fdd02e;
+  background-color: #E45314;
   font-size: var(--fontSize-label-2);
   font-weight: var(--weight-bold);
   text-transform: uppercase;
   letter-spacing: var(--letterSpacing-5);
   max-width: max-content;
-  border: 2px solid #fdd02e;
+  border: 2px solid #E45314;
   padding: 12px 45px;
   overflow: hidden;
   z-index: 1;
@@ -461,7 +461,7 @@ color: #fdd02e; }
 }
 
 .btn-secondary {
-  background-color: #fdd02e;
+  background-color: #E45314;
   color: var(--black);
 }
 
@@ -796,7 +796,7 @@ color: #fdd02e; }
 .navbar-link .span { transition: var(--transition-1); }
 
 .navbar-link:is(:hover, :focus-visible, .active) .span {
-  color: #fdd02e;
+  color: #E45314;
   transform: translateX(20px);
 }
 
@@ -1775,7 +1775,7 @@ textarea.input-field {
     z-index: 1;
     color: black;
     font-size: 2.4rem;
-    border: 1px solid #fdd02e;
+    border: 1px solid #E45314;
     width: 45px;
     height: 45px;
     place-items: center;
@@ -1791,7 +1791,7 @@ textarea.input-field {
   .hero .slider-btn.next { right: 30px; }
 
   .hero .slider-btn:is(:hover, :focus-visible) {
-    background-color: #fdd02e;
+    background-color: #E45314;
     color: var(--black);
     border: 1px solid black;
 
@@ -2306,7 +2306,7 @@ textarea.input-field {
 
 .menu-card .badge {
   display: inline-block;
-  background-color: #fdd02e;
+  background-color: #E45314;
   color: #000000;
   font-size: 1em;
   padding: 2px 6px;
@@ -2315,7 +2315,7 @@ textarea.input-field {
 }
 
 .menu-card button {
-  background-color: #fdd02e;
+  background-color: #E45314;
   color: #000000;
   border: none;
   padding: 8px 12px;
@@ -2375,7 +2375,7 @@ textarea.input-field {
   font-family: 'Cinzel', serif;
   right: 50px;
   bottom: 60px;
-  background-color: #fdd02e;
+  background-color: #E45314;
   color: #000000;
   border: none;
   border-radius: 50px;
@@ -2397,7 +2397,7 @@ textarea.input-field {
 .checkout {
   width: 100%;
   padding: 10px;
-  background-color: #fdd02e;
+  background-color: #E45314;
   color: #000000;
   border: none;
   border-radius: 5px;
@@ -2407,5 +2407,5 @@ textarea.input-field {
 
 .checkout:hover {
   background-color: black;
-  color: #fdd02e;
+  color: #E45314;
 }
