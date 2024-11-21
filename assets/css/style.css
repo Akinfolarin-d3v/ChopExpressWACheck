@@ -281,10 +281,11 @@ body.nav-active { overflow: hidden; }
 .title-2,
 .title-3,
 .title-4 {
-  color: black;
+  color: rgb(0, 0, 0);
   font-family: var(--fontFamily-forum);
   font-weight: var(--weight-regular);
   line-height: var(--lineHeight-2);
+  text-shadow: 3px 5px 4px #ffffff;
 }
 
 .display-1 {
@@ -299,6 +300,7 @@ color: #fdd02e; }
   font-size: var(--fontSize-headline-2);
   line-height: var(--lineHeight-6);
   color: #fff;
+  text-shadow: 3px 5px 4px #ffffff;
 }
 
 .title-1 { font-size: var(--fontSize-title-1); }
@@ -318,6 +320,7 @@ color: #fdd02e; }
   font-size: var(--fontSize-body-2);
   line-height: var(--lineHeight-4);
   color: #000000;
+  text-shadow: 3px 5px 4px #ffffff;
 }
 
 .body-3 { font-size: var(--fontSize-body-3); }
@@ -397,6 +400,7 @@ color: #fdd02e; }
   text-transform: uppercase;
   letter-spacing: var(--letterSpacing-2);
   margin-block-end: 12px;
+  text-shadow: 3px 5px 4px #ffffff;
 }
 
 .section-subtitle::after {
@@ -431,7 +435,7 @@ color: #fdd02e; }
   width: 200%;
   height: 200%;
   border-radius: var(--radius-circle);
-  background-color: #ffffff;
+  background-color: #3f3e3e;
   transition: var(--transition-2);
   z-index: -1;
 }
@@ -457,7 +461,7 @@ color: #fdd02e; }
 }
 
 .btn-secondary {
-  background-color: var(--gold-crayola);
+  background-color: #fdd02e;
   color: var(--black);
 }
 
@@ -1769,9 +1773,9 @@ textarea.input-field {
     display: grid;
     position: absolute;
     z-index: 1;
-    color: var(--gold-crayola);
+    color: black;
     font-size: 2.4rem;
-    border: 1px solid var(--gold-crayola);
+    border: 1px solid #fdd02e;
     width: 45px;
     height: 45px;
     place-items: center;
@@ -1787,8 +1791,10 @@ textarea.input-field {
   .hero .slider-btn.next { right: 30px; }
 
   .hero .slider-btn:is(:hover, :focus-visible) {
-    background-color: var(--gold-crayola);
+    background-color: #fdd02e;
     color: var(--black);
+    border: 1px solid black;
+
   }
 
 
