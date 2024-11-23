@@ -298,6 +298,57 @@
 
           <span class="label-2 text-center span">Place Order</span>
         </a>
+        <video class="hero-video" autoplay muted loop playsinline style="display: none;">
+          <source src="./assets/videos/hero.mov" type="video/mp4">
+          Your browser does not support the video tag.
+          <style>
+            /* Default styles */
+            .hero-slider .slider-bg {
+              display: block;
+            }
+
+            .hero-video {
+              display: none;
+            }
+
+            /* For smaller devices (e.g., max-width: 768px) */
+            @media (max-width: 768px) {
+              .hero-slider .slider-bg {
+                display: none;
+              }
+
+              .hero-video {
+                display: block;
+                width: 100%;
+                height: auto;
+              }
+            }
+
+          </style>
+          <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            const video = document.querySelector(".hero-video");
+            const sliderBg = document.querySelectorAll(".slider-bg");
+
+            const toggleMedia = () => {
+              if (window.innerWidth <= 768) {
+                video.style.display = "block";
+                sliderBg.forEach((bg) => (bg.style.display = "none"));
+              } else {
+                video.style.display = "none";
+                sliderBg.forEach((bg) => (bg.style.display = "block"));
+              }
+            };
+
+            // Run on initial load
+            toggleMedia();
+
+            // Add event listener to handle window resize
+            window.addEventListener("resize", toggleMedia);
+          });
+
+          </script>
+        </video>
 
       </section>
 
