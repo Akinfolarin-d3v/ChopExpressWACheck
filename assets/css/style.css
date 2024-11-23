@@ -285,8 +285,8 @@ body.nav-active { overflow: hidden; }
   font-family: var(--fontFamily-forum);
   font-weight: var(--weight-regular);
   line-height: var(--lineHeight-2);
-  text-shadow: 3px 5px 4px #ffffff;
-}
+/*   text-shadow: 3px 5px 4px #ffffff;
+} */
 
 .display-1 {
   font-size: var(--fontSize-display-1);
