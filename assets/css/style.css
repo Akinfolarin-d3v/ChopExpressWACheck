@@ -285,8 +285,8 @@ body.nav-active { overflow: hidden; }
   font-family: var(--fontFamily-forum);
   font-weight: var(--weight-regular);
   line-height: var(--lineHeight-2);
-  text-shadow: 3px 5px 4px #ffffff;
-}
+/*   text-shadow: 3px 5px 4px #ffffff;
+} */
 
 .display-1 {
   font-size: var(--fontSize-display-1);
@@ -300,8 +300,8 @@ color: #E45314; }
   font-size: var(--fontSize-headline-2);
   line-height: var(--lineHeight-6);
   color: #fff;
-  text-shadow: 3px 5px 4px #ffffff;
-}
+/*   text-shadow: 3px 5px 4px #ffffff;
+} */
 
 .title-1 { font-size: var(--fontSize-title-1); }
 
@@ -320,8 +320,8 @@ color: #E45314; }
   font-size: var(--fontSize-body-2);
   line-height: var(--lineHeight-4);
   color: #000000;
-  text-shadow: 3px 5px 4px #ffffff;
-}
+/*   text-shadow: 3px 5px 4px #ffffff;
+} */
 
 .body-3 { font-size: var(--fontSize-body-3); }
 
@@ -400,8 +400,8 @@ color: #E45314; }
   text-transform: uppercase;
   letter-spacing: var(--letterSpacing-2);
   margin-block-end: 12px;
-  text-shadow: 3px 5px 4px #ffffff;
-}
+/*   text-shadow: 3px 5px 4px #ffffff;
+} */
 
 .section-subtitle::after {
   content: url('../images/separator.svg');
