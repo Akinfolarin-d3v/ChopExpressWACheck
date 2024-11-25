@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 Akinfolarin.D3v
+ * copyright 2024 Akinfolarin.D3v
  */
 
 
@@ -294,7 +294,7 @@ body.nav-active { overflow: hidden; }
 }
 
 .headline-1 { font-size: var(--fontSize-headline-1);
-color: #E45314; }
+color: #fdd02e; }
 
 .headline-2 {
   font-size: var(--fontSize-headline-2);
@@ -351,7 +351,7 @@ color: #E45314; }
 .contact-label { font-weight: var(--weight-bold); }
 
 .contact-number {
-  color: #E45314;
+  color: #fdd02e;
   max-width: max-content;
   margin-inline: auto;
 }
@@ -414,13 +414,13 @@ color: #E45314; }
 .btn {
   position: relative;
   color: #000000;
-  background-color: #E45314;
+  background-color: #fdd02e;
   font-size: var(--fontSize-label-2);
   font-weight: var(--weight-bold);
   text-transform: uppercase;
   letter-spacing: var(--letterSpacing-5);
   max-width: max-content;
-  border: 2px solid #E45314;
+  border: 2px solid #fdd02e;
   padding: 12px 45px;
   overflow: hidden;
   z-index: 1;
@@ -461,7 +461,7 @@ color: #E45314; }
 }
 
 .btn-secondary {
-  background-color: #E45314;
+  background-color: #fdd02e;
   color: var(--black);
 }
 
@@ -796,7 +796,7 @@ color: #E45314; }
 .navbar-link .span { transition: var(--transition-1); }
 
 .navbar-link:is(:hover, :focus-visible, .active) .span {
-  color: #E45314;
+  color: #fdd02e;
   transform: translateX(20px);
 }
 
@@ -923,7 +923,7 @@ color: #fdd02e; }
   bottom: 15px;
   right: 15px;
   z-index: 2;
-  background-color: #E45314;
+  background-color: #fdd02e;
   width: 110px;
   height: 110px;
   padding: 12px;
@@ -945,7 +945,7 @@ color: #fdd02e; }
 
 .hero-btn::after {
   inset: 0;
-  border: 1px solid #E45314;
+  border: 1px solid #fdd02e;
   animation: rotate360 15s linear infinite;
 }
 
@@ -1775,7 +1775,7 @@ textarea.input-field {
     z-index: 1;
     color: black;
     font-size: 2.4rem;
-    border: 1px solid #E45314;
+    border: 1px solid #fdd02e;
     width: 45px;
     height: 45px;
     place-items: center;
@@ -1791,7 +1791,7 @@ textarea.input-field {
   .hero .slider-btn.next { right: 30px; }
 
   .hero .slider-btn:is(:hover, :focus-visible) {
-    background-color: #E45314;
+    background-color: #fdd02e;
     color: var(--black);
     border: 1px solid black;
 
@@ -2306,7 +2306,7 @@ textarea.input-field {
 
 .menu-card .badge {
   display: inline-block;
-  background-color: #E45314;
+  background-color: #fdd02e;
   color: #000000;
   font-size: 1em;
   padding: 2px 6px;
@@ -2315,7 +2315,7 @@ textarea.input-field {
 }
 
 .menu-card button {
-  background-color: #E45314;
+  background-color: #fdd02e;
   color: #000000;
   border: none;
   padding: 8px 12px;
@@ -2390,14 +2390,14 @@ textarea.input-field {
 
 .fixed-button:hover {
   background-color: black;
-  color: #E45314;
+  color: #fdd02e;
 }
 
 /* Additional styling for the checkout button */
 .checkout {
   width: 100%;
   padding: 10px;
-  background-color: #E45314;
+  background-color: #fdd02e;
   color: #000000;
   border: none;
   border-radius: 5px;
@@ -2407,5 +2407,5 @@ textarea.input-field {
 
 .checkout:hover {
   background-color: black;
-  color: #E45314;
+  color: #fdd02e;
 }
