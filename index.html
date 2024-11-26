@@ -159,156 +159,135 @@
     <article>
 
       <!-- 
-        - #HERO
-      -->
+  - #HERO
+-->
 
-      <section class="hero text-center" aria-label="home" id="home">
+<section class="hero text-center" aria-label="home" id="home">
 
-        <ul class="hero-slider" data-hero-slider>
+  <ul class="hero-slider" data-hero-slider>
 
-          <li class="slider-item active" data-hero-slider-item>
+    <li class="slider-item active" data-hero-slider-item>
+      <div class="slider-bg">
+        <img src="./assets/images/hero.jpg" width="1880" height="950" alt="" class="img-cover">
+      </div>
 
-            <div class="slider-bg">
-              
-            <img src="./assets/images/hero.jpg" width="1880" height="950" alt="" class="img-cover">
-            </div>
+      <p class="label-2 section-subtitle slider-reveal">Traditional & Hygiene</p>
+      <h1 class="display-1 hero-title slider-reveal">
+        For the love of <br>
+        delicious food
+      </h1>
+      <p class="body-2 hero-text slider-reveal">
+        Delicious food and great service! True taste of West African cuisine.
+      </p>
+      <a href="#menu" class="btn btn-primary slider-reveal">
+        <span class="text text-1">View Our Menu</span>
+        <span class="text text-2" aria-hidden="true">View Our Menu</span>
+      </a>
+    </li>
 
-            <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+    <li class="slider-item" data-hero-slider-item>
+      <div class="slider-bg">
+        <img src="./assets/images/hero2.jpg" width="1880" height="950" alt="" class="img-cover">
+      </div>
 
-            <h1 class="display-1 hero-title slider-reveal">
-              For the love of <br>
-              delicious food
-            </h1>
+      <p class="label-2 section-subtitle slider-reveal">Delightful Experience</p>
+      <h1 class="display-1 hero-title slider-reveal">
+        Flavors Inspired by <br>
+        the Seasons
+      </h1>
+      <p class="body-2 hero-text slider-reveal">
+        Delicious food and great service! True taste of West African cuisine.
+      </p>
+      <a href="#menu" class="btn btn-primary slider-reveal">
+        <span class="text text-1">View Our Menu</span>
+        <span class="text text-2" aria-hidden="true">View Our Menu</span>
+      </a>
+    </li>
 
-            <p class="body-2 hero-text slider-reveal">
-              Delight in Every Bite
-            </p>
+    <li class="slider-item" data-hero-slider-item>
+      <div class="slider-bg">
+        <img src="./assets/images/hero4.jpg" width="1880" height="950" alt="" class="img-cover">
+      </div>
 
-            <a href="#menu" class="btn btn-primary slider-reveal">
-              <span class="text text-1">View Our Menu</span>
+      <p class="label-2 section-subtitle slider-reveal">Amazing & Delicious</p>
+      <h1 class="display-1 hero-title slider-reveal">
+        Where every flavor <br>
+        tells a story
+      </h1>
+      <p class="body-2 hero-text slider-reveal">
+        Delicious food and great service! True taste of West African cuisine.
+      </p>
+      <a href="#menu" class="btn btn-primary slider-reveal">
+        <span class="text text-1">View Our Menu</span>
+        <span class="text text-2" aria-hidden="true">View Our Menu</span>
+      </a>
+    </li>
 
-              <span class="text text-2" aria-hidden="true">View Our Menu</span>
-            </a>
+  </ul>
 
-          </li>
+  <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+    <ion-icon name="chevron-back"></ion-icon>
+  </button>
 
-          <li class="slider-item" data-hero-slider-item>
+  <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+    <ion-icon name="chevron-forward"></ion-icon>
+  </button>
 
-            <div class="slider-bg">
-              <img src="./assets/images/hero2.jpg" width="1880" height="950" alt="" class="img-cover">
-            </div>
+  <a href="#" class="hero-btn has-after">
+    <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+    <span class="label-2 text-center span">Place Order</span>
+  </a>
 
-            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+  <!-- Image for smaller screens -->
+  <img src="./assets/images/chopexpress.jpg" alt="ChopExpress" class="hero-image" style="display: none;">
 
-            <h1 class="display-1 hero-title slider-reveal">
-              Flavors Inspired by <br>
-              the Seasons
-            </h1>
+  <style>
+    /* Default styles */
+    .hero-slider .slider-bg {
+      display: block;
+    }
 
-            <p class="body-2 hero-text slider-reveal">
-              Delight in Every Bite            </p>
+    .hero-image {
+      display: none;
+    }
 
-            <a href="#menu" class="btn btn-primary slider-reveal">
-              <span class="text text-1">View Our Menu</span>
+    /* For smaller devices (e.g., max-width: 768px) */
+    @media (max-width: 768px) {
+      .hero-slider .slider-bg {
+        display: none;
+      }
 
-              <span class="text text-2" aria-hidden="true">View Our Menu</span>
-            </a>
+      .hero-image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
 
-          </li>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const heroImage = document.querySelector(".hero-image");
+      const sliderBg = document.querySelectorAll(".slider-bg");
 
-          <li class="slider-item" data-hero-slider-item>
+      const toggleMedia = () => {
+        if (window.innerWidth <= 768) {
+          heroImage.style.display = "block";
+          sliderBg.forEach((bg) => (bg.style.display = "none"));
+        } else {
+          heroImage.style.display = "none";
+          sliderBg.forEach((bg) => (bg.style.display = "block"));
+        }
+      };
 
-            <div class="slider-bg">
-              
-            <img src="./assets/images/hero4.jpg" width="1880" height="950" alt="" class="img-cover">
-            </div>
+      // Run on initial load
+      toggleMedia();
 
-            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
-
-            <h1 class="display-1 hero-title slider-reveal">
-              Where every flavor <br>
-              tells a story
-            </h1>
-
-            <p class="body-2 hero-text slider-reveal">
-              Delight in Every Bite            </p>
-
-            <a href="#menu" class="btn btn-primary slider-reveal">
-              <span class="text text-1">View Our Menu</span>
-
-              <span class="text text-2" aria-hidden="true">View Our Menu</span>
-            </a>
-
-          </li>
-
-        </ul>
-
-        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
-          <ion-icon name="chevron-back"></ion-icon>
-        </button>
-
-        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
-          <ion-icon name="chevron-forward"></ion-icon>
-        </button>
-
-        <a href="#" class="hero-btn has-after">
-          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
-
-          <span class="label-2 text-center span">Place Order</span>
-        </a>
-        <video class="hero-video" autoplay muted loop playsinline style="display: none;">
-          <source src="./assets/videos/hero.mov" type="video/mp4">
-          Your browser does not support the video tag.
-          <style>
-            /* Default styles */
-            .hero-slider .slider-bg {
-              display: block;
-            }
-
-            .hero-video {
-              display: none;
-            }
-
-            /* For smaller devices (e.g., max-width: 768px) */
-            @media (max-width: 768px) {
-              .hero-slider .slider-bg {
-                display: none;
-              }
-
-              .hero-video {
-                display: block;
-                width: 100%;
-                height: 100vh;
-              }
-            }
-
-          </style>
-          <script>
-            document.addEventListener("DOMContentLoaded", () => {
-            const video = document.querySelector(".hero-video");
-            const sliderBg = document.querySelectorAll(".slider-bg");
-
-            const toggleMedia = () => {
-              if (window.innerWidth <= 768) {
-                video.style.display = "block";
-                sliderBg.forEach((bg) => (bg.style.display = "none"));
-              } else {
-                video.style.display = "none";
-                sliderBg.forEach((bg) => (bg.style.display = "block"));
-              }
-            };
-
-            // Run on initial load
-            toggleMedia();
-
-            // Add event listener to handle window resize
-            window.addEventListener("resize", toggleMedia);
-          });
-
-          </script>
-        </video>
-
-      </section>
+      // Add event listener to handle window resize
+      window.addEventListener("resize", toggleMedia);
+    });
+  </script>
+</section>
 
 
 
