@@ -674,7 +674,10 @@ color: #fdd02e; }
   #TOPBAR
 \*-----------------------------------*/
 
-.topbar { display: none; }
+.topbar { display: none;
+         margin-top: 0;
+         padding-top: 0;}
+
 
 
 
@@ -697,6 +700,8 @@ color: #fdd02e; }
   border-block-end: 1px solid transparent;
   transition: var(--transition-1);
   margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .header.active {
@@ -716,6 +721,8 @@ color: #fdd02e; }
   justify-content: space-between;
   align-items: center;
   gap: 8px;
+   margin-top: 0;
+  padding-top: 0;
 }
 
 .nav-open-btn {
@@ -755,6 +762,8 @@ color: #fdd02e; }
   visibility: hidden;
   z-index: 2;
   transition: var(--transition-2);
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .navbar.active {
