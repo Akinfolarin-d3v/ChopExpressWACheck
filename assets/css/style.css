@@ -694,6 +694,7 @@ color: #fdd02e; }
   z-index: 4;
   border-block-end: 1px solid transparent;
   transition: var(--transition-1);
+  margin-bottom: 0;
 }
 
 .header.active {
@@ -869,6 +870,8 @@ color: #fdd02e; }
   min-height: 100vh;
   overflow: hidden;
   z-index: 1;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .hero .slider-item {
