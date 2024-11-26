@@ -210,209 +210,149 @@
 
       <section class="hero text-center" aria-label="home" id="home">
 
-        <ul class="hero-slider" data-hero-slider>
+  <ul class="hero-slider" data-hero-slider>
 
+    <li class="slider-item active" data-hero-slider-item>
+      <div class="slider-bg">
+        <img src="./assets/images/hero2.jpg" width="1880" height="950" alt="" class="img-cover">
+      </div>
+      <div class="order-container">
+        <h2>Your Order</h2>
+        <ul id="checkout-cart-items" class="order-list"></ul>
+        <p id="checkout-total-price" class="total-price"></p>
+        <h2>DELIVERY DETAILS</h2>
+        <form id="checkout-form" class="checkout-form">
+          <label for="name" class="visually-hidden">Name</label>
+          <input type="text" id="name" name="name" placeholder="Name" required>
+          <label for="phone" class="visually-hidden">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+          <label for="address" class="visually-hidden">Address</label>
+          <textarea id="address" name="address" placeholder="Address" required></textarea>
+          <button type="submit" id="place-order-btn">Place Order</button>
+        </form>
+      </div>
+    </li>
 
-          <li class="slider-item active" data-hero-slider-item>
+  </ul>
 
-            <div class="slider-bg">
-              
-              <img src="./assets/images/hero2.jpg" width="1880" height="950" alt="" class="img-cover">
-            </div>
-                  <div class="order-container">
-                    <h2>Your Order</h2>
-                    <ul id="checkout-cart-items" class="order-list"></ul>
-                    <p id="checkout-total-price" class="total-price"></p>
-                
-<!--                     <p class="bank-dts">Make Payment to MOMO: <br> 1234567890
-                       [CHOPEXPRESS]
-                      <br>
-                      Payment Validates Order!</p> -->
-                    <h2>DELIVERY DETAILS</h2>
-                    <form id="checkout-form" class="checkout-form">
-                        <label for="name" class="visually-hidden">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Name" required>
-                
-                        <label for="phone" class="visually-hidden">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
-                
-                        <label for="address" class="visually-hidden">Address</label>
-                        <textarea id="address" name="address" placeholder="Address" required></textarea>
-                
-                        <button type="submit" id="place-order-btn">Place Order</button>
-                    </form>
-                    
-                    <style>
-                      /* Container with Blur Effect */
-                      .order-container {
-                          background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for blur effect */
-                          backdrop-filter: blur(0.1px); /* Apply blur effect */
-                          padding: 10px;
-                          border-radius: 10px;
-                          width: 300px;
-                          max-width: 400px;
-                          overflow-y: auto;
-                          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                      }
-                      .bank-dts {
-                        color: #000000;
-                        font-size: 8px;
-                        font-weight: bolder;
-                        text-transform: uppercase;
-                      }
+  <!-- Static Image for Smaller Devices -->
+  <img class="hero-static-image" src="./assets/images/ChopExpress.jpg" alt="ChopExpress" style="display: none;">
 
-                      /* Headers */
-                      h2 {
-                          font-size: 1.5rem;
-                          color: #333;
-                          margin-bottom: 15px;
-                      }
+  <style>
+    /* General Styling */
+    .order-container {
+      background-color: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(0.1px);
+      padding: 10px;
+      border-radius: 10px;
+      width: 300px;
+      max-width: 400px;
+      overflow-y: auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-                      /* Order List */
-                      .order-list {
-                          list-style-type: none;
-                          padding: 0;
-                          margin: 10px 0;
-                          color: #000000;
-                          background-color: #fdd02e;
-                          backdrop-filter: blur(0.1px); /* Apply blur effect */
-                          border-radius: 10px;
-                          font-size: 8px;
-                          max-height: 100px;
-                          z-index: 1000;
-                          overflow-y: auto;
+    .order-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 10px 0;
+      color: #000000;
+      background-color: #fdd02e;
+      border-radius: 10px;
+      font-size: 12px;
+      max-height: 100px;
+      overflow-y: auto;
+    }
 
-                      }
+    .total-price {
+      font-weight: bolder;
+      margin-top: 10px;
+      color: #000000;
+    }
 
-                      .total-price {
-                          font-weight: bolder;
-                          margin-top: 10px;
-                          color: #000000;
-                      }
+    .checkout-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
 
-                      /* Form Styling */
-                      .checkout-form {
-                          display: flex;
-                          flex-direction: column;
-                          gap: 15px;
-                      }
+    .checkout-form input,
+    .checkout-form textarea {
+      padding: 12px;
+      border: 1px solid yellow;
+      border-radius: 4px;
+    }
 
-                      .checkout-form input,
-                      .checkout-form textarea {
-                          width: 100%;
-                          padding: 12px;
-                          font-size: 1rem;
-                          border: 1px solid yellow; /* Yellow border */
-                          border-radius: 4px;
-                          background-color: #f9f9f9;
-                          transition: border-color 0.3s, background-color 0.3s;
-                      }
+    .checkout-form button {
+      padding: 12px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #000000;
+      background-color: #fdd02e;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
 
-                      .checkout-form input:focus,
-                      .checkout-form textarea:focus {
-                          outline: none;
-                          border-color: #fdd02e; /* Deeper yellow on focus */
-                          background-color: #fff;
-                      }
+    /* Media Query for Smaller Devices */
+    @media (max-width: 768px) {
+      .hero-slider {
+        display: none;
+      }
+      .hero-static-image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
 
-                      .checkout-form button {
-                          padding: 12px;
-                          font-size: 1rem;
-                          font-weight: bold;
-                          color: #000000;
-                          background-color: #fdd02e;
-                          border: none;
-                          border-radius: 4px;
-                          cursor: pointer;
-                          transition: background-color 0.3s;
-                      }
+  <script>
+    // Initialize EmailJS
+    (function () {
+      emailjs.init("wp7mSbUDSzvwKdmrr");
+    })();
 
-                      .checkout-form button:hover {
-                          background-color: #fdd02e;
-                      }
+    // Retrieve and display cart items
+    const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+    const checkoutCartItems = document.getElementById("checkout-cart-items");
+    const checkoutTotalPrice = document.getElementById("checkout-total-price");
+    let totalPrice = 0;
 
-                      /* Accessibility: Visually Hidden Labels */
-                      .visually-hidden {
-                          position: absolute;
-                          width: 1px;
-                          height: 1px;
-                          padding: 0;
-                          margin: -1px;
-                          overflow: hidden;
-                          clip: rect(0, 0, 0, 0);
-                          border: 0;
-                      }
-
-                    </style>
-                </div>
-                
-
-            
-    
-
-        <script>
-            
-
-            
-   // Initialize EmailJS
-(function() {
-    emailjs.init("wp7mSbUDSzvwKdmrr"); // Replace with your EmailJS user ID
-})();
-
-// Retrieve and display cart items from localStorage
-const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-const checkoutCartItems = document.getElementById("checkout-cart-items");
-const checkoutTotalPrice = document.getElementById("checkout-total-price");
-
-let totalPrice = 0;
-
-// Populate the cart items on the page
-if (cartItems.length > 0) {
-    cartItems.forEach(item => {
+    if (cartItems.length > 0) {
+      cartItems.forEach(item => {
         const listItem = document.createElement("li");
         listItem.textContent = `${item.name} - ₵${(item.price * item.quantity).toFixed(2)} x ${item.quantity}`;
         checkoutCartItems.appendChild(listItem);
         totalPrice += item.price * item.quantity;
-    });
-}
+      });
+    }
 
-// Update the total price on the page
-checkoutTotalPrice.textContent = `Total: ₵${totalPrice.toFixed(2)}`;
+    checkoutTotalPrice.textContent = `Total: ₵${totalPrice.toFixed(2)}`;
 
-// Handle form submission and open WhatsApp chat
-document.getElementById("place-order-btn").addEventListener("click", function(event) {
-    event.preventDefault();
+    // Handle form submission
+    document.getElementById("place-order-btn").addEventListener("click", function (event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+      const address = document.getElementById("address").value;
 
-    // Collect user details
-    const name = document.getElementById("name").value;
-    const phone = document.getElementById("phone").value;
-    const address = document.getElementById("address").value;
-
-    // Check if cart items are present
-    const cartItemsDetails = cartItems.length > 0
+      const cartItemsDetails = cartItems.length > 0
         ? cartItems.map(item => `${item.name} x ${item.quantity}`).join(", ")
         : "No items in the cart";
 
-    // Format the message for WhatsApp
-    const message = `Hello! Here are my order details:\n\n` +
-                    `Name: ${name}\nPhone: ${phone}\nAddress: ${address}\n\n` +
-                    `Order Items: ${cartItemsDetails}\nTotal Price: ₵${totalPrice.toFixed(2)}\n\n` +
-                    `Thank you!`;
+      const message = `Hello! Here are my order details:\n\n` +
+                      `Name: ${name}\nPhone: ${phone}\nAddress: ${address}\n\n` +
+                      `Order Items: ${cartItemsDetails}\nTotal Price: ₵${totalPrice.toFixed(2)}\n\n` +
+                      `Thank you!`;
 
-    // Open WhatsApp with the pre-filled message
-    const whatsappNumber = "2330530549169"; // You can use the actual number
-    const whatsappURL = `https://wa.me/${2330530549169}?text=${encodeURIComponent(message)}`;
+      const whatsappNumber = "2330530549169";
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappURL, "_blank");
+    });
+  </script>
 
-    // Redirect to WhatsApp
-    window.open(whatsappURL, "_blank");
-});
+</section>
 
-        </script>
-        
-        
-
-        
-      </section>
      
         
         
