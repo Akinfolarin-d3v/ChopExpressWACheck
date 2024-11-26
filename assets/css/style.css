@@ -283,7 +283,7 @@ body.nav-active { overflow: hidden; }
 .title-2,
 .title-3,
 .title-4 {
-  color: rgb(0, 0, 0);
+  color: #ffffff;
   font-family: var(--fontFamily-forum);
   font-weight: var(--weight-regular);
   line-height: var(--lineHeight-2);
@@ -321,7 +321,7 @@ color: #fdd02e; }
 .body-2 {
   font-size: var(--fontSize-body-2);
   line-height: var(--lineHeight-4);
-  color: #000000;
+  color: #ffffff;
 /*   text-shadow: 3px 5px 4px #ffffff; */
 }
 
@@ -397,7 +397,7 @@ color: #fdd02e; }
 
 .section-subtitle {
   position: relative;
-  color: #000000;
+  color: #ffffff;
   font-weight: var(--weight-bold);
   text-transform: uppercase;
   letter-spacing: var(--letterSpacing-2);
