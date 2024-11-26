@@ -402,7 +402,7 @@ color: #fdd02e; }
   text-transform: uppercase;
   letter-spacing: var(--letterSpacing-2);
   margin-block-end: 12px;
-/*   text-shadow: 3px 5px 4px #ffffff; */
+  text-shadow: 1px 2px 2px #ffffff; 
 }
 
 .section-subtitle::after {
@@ -411,6 +411,8 @@ color: #fdd02e; }
   width: 100px;
   margin-inline: auto;
   margin-block-start: 5px;
+  text-shadow: 1px 2px 2px #ffffff; 
+
 }
 
 .btn {
@@ -888,6 +890,7 @@ color: #fdd02e; }
   visibility: hidden;
   transition: var(--transition-3);
   z-index: 1;
+  text-shadow: 1px 2px 1px;
 
 }
 
