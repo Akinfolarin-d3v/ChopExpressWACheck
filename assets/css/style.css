@@ -1261,7 +1261,7 @@ color: #ffffff; }
 }
 
 .testi .profile-name {
-  color: #000;
+  color: #fff;
   font-weight: var(--weight-bold);
   text-transform: uppercase;
   letter-spacing: var(--letterSpacing-3);
