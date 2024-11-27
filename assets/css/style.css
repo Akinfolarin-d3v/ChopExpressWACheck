@@ -245,7 +245,7 @@ html {
 }
 
 body {
-  background-color: #7c7a7a;
+  background-color: #000;
   color: var(--white);
   font-family: var(--fontFamily-dm_sans);
   font-size: var(--fontSize-body-4);
